@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+*{max-width: 94.9em;
+  margin: 0em;
+  padding: 0em;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+
+  font-family: 'Bebas Neue', cursive;
+}
+
+
+
+h1{
+  margin: 2em 0 .5em 0;
+  text-align: center;
+  color: #222222;
+  font-family: 'Bebas Neue', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+ }
+
+
+
+header{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+
+
+ nav { /* Barra de navegacion */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F2B1A2;
+  color: #fff;
+  
+}
+
+
+
+  
+  .barra a{ /* Diseño de la barra */
+  text-decoration: none;
+  padding: 1em 1em;
+  margin: 1em;
+  display: flex;
+  color: white;
+  transition: .3s ease-in-out;
+        
+  }
+      
+  .barra a:hover { /* Diseño de la barra */
+  background-color: #F28D9F;
+  color: white;
+  }
+
+  .barra a{ /* Diseño de la barra */
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 0em;
+  display: flex;
+  }
+
+nav ul li { /* separacion del texto de la barra y el alto (renglones que ocupa) */
+margin: 0 50px;
+        
+      
+}
+      
+nav ul {/* separacion del texto de la barra y el alto (renglones que ocupa) */
+display: flex;
+list-style: none;
+justify-content: left;
+margin-inline: auto;
+flex-direction: row;
+}
+
+  
+
+
+
+    .left-fraction {/* Franja lateral izquierda */
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 0em; /*poner en 1.5em */
+      background-color: #c8ccf9; /* Color celeste */
+      z-index: 0; /*poner en -1 */
+    }
+
+
+    .right-fraction {/* Franja lateral derecha */
+	  position: fixed;
+	  top: 0;
+	  bottom: 0;
+	  right: 0;
+	  width: 0em; /*poner en 1.5em */
+	  background-color: #c8ccf9; /* Color celeste */
+	  z-index: 0; /*poner en -1 */
+    }
+
+
+    p{
+      margin: 2em;
+
+    }
+
+    /* div{ 
+      column-count: 3; 
+      column-gap: 10px; 
+      column-rule:10px double red ; */ /*lineas de separacion, en este caso 2 lineas rojas */ 
+    
+  
+      
+    
+
+
+    footer {
+      background-color: #f1c2db;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    footer p {
+      color: black;
+      font-family: 'Bebas Neue', cursive;
+    }
+    
+
+    form {
+      background-color: #f2f2f2;
+      padding: 5em;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      margin: 3em;
+
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+    
+   img {
+    width: 50%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Hace que la altura de la imagen se ajuste automáticamente al ancho */
+    display: block; /* Hace que la imagen se muestre como un bloque en línea */
+    margin: 5em; /* Elimina los márgenes predeterminados para la imagen */
+    padding: 2;
+   }
+    
+    
+
+    iframe{
+      margin: 2em;
+      border-radius: 20%;
+      box-shadow: 10px 20px 10px rgb(28, 24, 157); /*sombreado del elemento*/
+      transform: rotate(-10deg); /*rota el elemento*/ 
+    } 
+
+
+    p{
+      clear: right;
+    }
+    section img{
+      float: left;
+      margin-right: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media(max-width:600px)and(orientacion:landscape){
+      header nav {
+          background-color: blue;
+      
+  }
+  
+  header nav ul li{
+      flex-basis: 5%;
+      width: 5rem;
+      background-color: aqua;
+      padding: .5rem;
+      border-radius: 1rem;
+      font-size: 1rem;
+  }
+  
+  header nav ul li:hover{
+      background-color: black;
+      transition: .5s;
+  }
+  
+  header nav ul li a{
+      color: rgb(0, 0, 0);
+  }
+  
+  header nav ul li a:hover{
+      color: aliceblue;
+  }
+  
+  h1{
+      margin-left: 2rem;
+      color: white;
+  }
+  
+  
+  footer{
+      background-color: rgb(62, 194, 223);
+  }
+  
+  footer{
+      width: 100%;
+  }
+  
+  footer section{
+      display: flex;
+      gap: 1rem;
+      margin-top: 100%;
+      background-color: darkgray;
+      padding: 1rem;
+      justify-content: center;
+  }
+  
+  footer ul{
+      display: flex;
+      gap: 1rem;
+  }
+   
+     }
